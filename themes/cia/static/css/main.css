@@ -1,0 +1,11 @@
+html {
+    font-family: 'Manrope', sans-serif;
+}
+
+.text-indigo-500 {
+    color: #FF804D !important;
+}
+
+.bg-indigo-500 {
+    background-color: #FF804D !important;;
+}

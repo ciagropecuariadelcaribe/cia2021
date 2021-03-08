@@ -1,0 +1,80 @@
+{{ define "main" }}
+<section id="about-us">
+    <div class="relative bg-gray-50 pt-16 pb-32 overflow-hidden">
+        <div class="relative">
+           
+            <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                    <div>
+                        <div class="mt-6">
+                            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">{{.Params.aboutTitle}}</h2>
+                            <p class="mt-4 text-lg text-gray-500">{{.Params.aboutDescpParrafo1}}</p>
+                            <p class="mt-4 text-lg text-gray-500">{{.Params.aboutDescpParrafo2}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                    <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="/images/img2.jpg">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mt-24 lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
+                    <div>
+                        <div class="mt-6">
+                            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">{{.Params.aboutTitle2}}</h2>
+                            <p class="mt-4 text-lg text-gray-500">{{.Params.aboutDescp2}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
+                    <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="/images/img3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="products">
+    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <h2 class="text-base font-semibold tracking-wider text-indigo-500 uppercase">OUR PRODUCTS</h2>
+            <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                {{.Params.productsTitle}}
+            </p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+                {{.Params.productsDescp}}
+            </p>
+
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {{range where .Site.Pages.ByDate "Params.type" "product"}}
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">{{.Params.title}}</h3>
+                                <p class="mt-5 text-base text-gray-500">{{.Params.descp}}</p>
+                                <a  class="text-base text-indigo-500 font-semibold" href="{{.Params.file}}" download> Get More Details </a>
+                            </div>
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+
+  
+{{end}}
