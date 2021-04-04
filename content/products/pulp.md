@@ -6,6 +6,6 @@ type: product
 
 title: "Marketing of Pulp Fruit"
 descp: "Practicality when enjoying the wonders That gives us nature, Is a requirement for us, For this reason we offer alternatives to refresh In a fast way and with the same benefits of a fresh fruit. We sell Fruit pulp."
-file: ""
+file: "/uploads/pulp_fruits.pdf"
 ---
 

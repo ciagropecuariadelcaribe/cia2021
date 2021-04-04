@@ -6,6 +6,6 @@ type: product
 
 title: "Marketing of Cattle"
 descp: "Our products are native to all of South America, Colombia, Uruguay, Brazil, Argentina, Peru, Chile, Bolivia and Paraguay. Our Cattle come from the following breeds Brahman, Nelore, Angus, Overo Colorado and Hereford."
-file: ""
+file: "/uploads/cattle.pdf"
 ---
 

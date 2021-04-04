@@ -6,6 +6,6 @@ type: product
 
 title: "Marketing of Beef"
 descp: "We have the best Meat products fulfilling the requirements of innocuity, hygiene and manipulation"
-file: ""
+file: "/uploads/meat_premium.pdf"
 ---
 
