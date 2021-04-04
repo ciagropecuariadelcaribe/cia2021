@@ -7,6 +7,5 @@ descp: It is the wholesale line, the minimum order quantity is 1 container, its 
 incoterm: FOB, CIF
 Payment1: Wire transfer, Advance or cash.
 Payment2: Letter of credit (LC) - irrevocable - confirmed - divisible.
-draft: true
 
 ---
