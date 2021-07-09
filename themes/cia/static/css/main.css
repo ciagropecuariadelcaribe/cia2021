@@ -9,3 +9,7 @@ html {
 .bg-indigo-500 {
     background-color: #FF804D !important;;
 }
+
+.h-100 {
+    height: 100% !important;
+}
